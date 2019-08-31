@@ -1,0 +1,7 @@
+    3  kubectl get clusterroles --no-headers
+    4  kubectl get clusterroles --no-headers | wc -l
+    5  kubectl get clusterrolebinding --no-headers | wc -l
+    6  kubectl describe clusterroles cluster-admin
+    7  kubectl descibe clusterrolebinding cluster-admin
+    8  kubectl describe clusterrolebinding cluster-admin
+    9  kubectl api-resources
