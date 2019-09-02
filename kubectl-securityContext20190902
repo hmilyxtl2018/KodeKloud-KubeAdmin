@@ -1,0 +1,21 @@
+    3  kubectl get pods
+    4  kubectl exec ubuntu-sleeper whoami
+    5  ls
+    6  cp multi-pod.yaml ubuntu.yaml
+    7  kubectl describe pod ubuntu-sleeper
+    8  vi ubuntu.yaml
+    9  vi  ubuntu.yaml
+   10  kubectl delete  pod ubuntu-sleeper
+   11  kubectl  create -f ubuntu.yaml
+   12  vi ubuntu.yaml
+   13  cat ubuntu.yaml
+   14  vi ubuntu.yaml
+   15  kubectl delete pod ubuntu-sleeper
+   16  cat ubuntu.yaml
+   17  kubectl create -f ubuntu.yaml
+   18  cat multi-pod.yaml
+   19  kubectl exec -it ubuntu-sleeper -- date -s '19 APR 2012 11:14:00'
+   20  vi ubuntu.yaml
+   21  kubectl delete pod ubuntu-sleeper
+   22  kubectl create -f ubuntu.yaml
+   23  kubectl exec -it ubuntu-sleeper -- date -s '19 APR 2012 11:14:00'
