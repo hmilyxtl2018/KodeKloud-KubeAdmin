@@ -8,4 +8,5 @@ spec:
   containers:
   -  image: ubuntu
      name: web
+     command: ["sleep", "4800"]
 
