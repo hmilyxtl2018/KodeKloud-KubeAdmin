@@ -9,4 +9,6 @@ spec:
   -  image: ubuntu
      name: web
      command: ["sleep", "4800"]
-
+     securityContext:
+      capabilities:
+        add: ["NET_ADMIN", "SYS_TIME"]
