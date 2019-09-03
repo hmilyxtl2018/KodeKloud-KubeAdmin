@@ -1,0 +1,40 @@
+    3  kubectl get api-rescources
+    4  kubectl  api-rescources
+    5  kubectl --help
+    6  clear
+    7  kubectl api-resources
+    8  clar
+    9  clear
+   10  kubectl get  pods
+   11  kubectl exec webapp cat /log/app.log
+   12  kubectl describe pod webapp   13  cp  /var/answers/webapp-pod-host
+   14  cp  /var/answers/webapp-pod-hostpath.yaml  webapp-pod-hostpath.yaml   15  cat webapp-pod-hostpath.yaml
+   16  kubectl create -f webapp-pod-hostpath.yaml
+   17  kubectl delete pod webapp
+   18  kubectl create -f webapp-pod-hostpath.yaml
+   19  cp /var/answers/pv-log.yaml pv-log.yaml
+   20  cat pv-log.yaml
+   21  kubectl create -f pv-log.yaml
+   22  kubectl get  persistentvolume
+   23  cp /var/answers/claim-log-1.yaml pv-claim.yaml
+   24  cat pv-claim.yaml
+   25  kubectl create -f pv-claim.yaml
+   26  kubectl get persistentvolumeclaims   27  kubectl get pvc
+   28  kubectl get pv   29  kubectl delete pvc claim-log-1
+   30  vi pv-claim.yaml
+   31  kubectl create pv-claim.yaml
+   32  kubectl create -f pv-claim.yaml
+   33  kubectl get  pvc
+   34  cp /var/answers/webapp-pod-pvc.yaml webapp-pod-pvc.yaml
+   35  cat webapp-pod-pvc.yaml
+   36  kubectl delete pod webapp
+   37  kubectl get pod
+   38  kubectl get pods
+   39  kubectl create -f webapp-pod-pvc.yaml
+   40  kubectl get pods -o wide
+   41  kubectl get  pv
+   42  kubectl delete pvc pv-claim.yaml
+   43  kubectl delete pvc claim-log-1
+   44  kubectl delete pod  webapp
+   45  kubectl get pvc
+   46  kubectl get  pv
