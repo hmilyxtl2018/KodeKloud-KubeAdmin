@@ -1,0 +1,7 @@
+    3  kubectl get networkpolicy
+    4  kubectl describe networkpolicy
+    5  kubectl get pods
+    6  kubectl get pods -o wide
+    7  kubectl create -f /var/answers/answer-internal-policy.yaml
+    8  kubectl get netwrokpolicy
+    9  kubectl get networkpolicy
