@@ -1,0 +1,29 @@
+   68  ip -n link
+   69  ip netns red ip link
+   70  ip nets exec red ip link
+   71  ip netns exec red ip link
+   72  clear
+   73  ip netns add red
+   74  ip netns add blue
+   75  ip netns
+   76  ip netns exec red lp link
+   77  ip netns exec red ip link
+   78  ip netns exec blue ip link
+   79  ip netns exec red arp
+   80  ip link add veth-red type veth peer name veth-blue
+   81  ip link set veth-red netns red
+   82  ip link set veth-blue netns blue
+   83  ip netns exec red addr add 192.168.15.1/24 dev veth-red
+   84  ip -n red addr add 192.168.15.1/24 dev veth-red
+   85  ip -n red ip link
+   86  ip netns exec red ip addr
+   87  ip -n blue addr add 192.168.15.2/24 dev veth-blue
+   88  ip -n red link set veth-red up
+   89  ip -n blue link set veth-blue up
+   90  ip netns exec red ping 192.168.15.2
+   91  history
+   92  ip netns exec red arp
+   93  ip netns exec blue are
+   94  ip netns exec blue arp
+   95  arp
+   96  history
