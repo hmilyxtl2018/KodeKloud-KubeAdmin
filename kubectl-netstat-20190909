@@ -1,0 +1,10 @@
+    3  kubectl get nodes    
+    4  kubectl get nodes --no-headers
+    5  ip link
+    6  ip addr    7  ip link show ens3
+    8  kubectl get nodes -o wide
+    9  arp node02   10  ip link show docker0
+   11  ip route show default
+   12  netstate -nplt
+   13  netstat -nplt
+   14  netstat -anp | grep etcd
