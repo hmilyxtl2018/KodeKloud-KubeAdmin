@@ -1,0 +1,9 @@
+    9  kubectl get  pods --all-namespaces
+    ## check pod network setting
+   10  kubectl logs weave-net-cdrzr weave -n kube-system
+    ## check service network setting
+   11  ps aux | grep kube-api
+   12  kubctl  get  nodes
+   13  kubectl  get  nodes
+    ## check kube-proxy network's adapt rules
+   17  kubectl logs kube-proxy-78lzr -n kube-system
