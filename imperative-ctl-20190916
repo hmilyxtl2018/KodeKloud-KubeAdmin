@@ -1,0 +1,11 @@
+    3  kubectl run --generator=run-pod/v1 nginx-pod --image=nginx:alpine
+    4  kubectl get pods
+    5  kubectl run --generator=run-pod/v1 redis --image=redis:alpine --labels tier=db
+    6  kubectl get pods
+    7  kubectl expose pod redis --port=6379 --name redis-service
+    8  kubectl create deployment webapp --image=kodekloud/webapp-color
+    9  kubectl scale deployment/webapp --replicas=3
+   10  kubectl get services
+   11  kubectl getpods
+   12  kubectl get  pods
+   13  kubectl expose deployment webapp --type=NodePort --port=8080 --name=webapp-service --dry-run -o yaml > webapp-service.yaml
